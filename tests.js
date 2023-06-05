@@ -13,8 +13,17 @@
 //       expect(helloWorld()).not.toBe(undefined);
 //     });
 // });
-describe("helloWorld", function () {
+describe("sayHello", function () {
     it('should be a defined function', function() {
-        expect(typeof helloWorld()).toBe("string");
+        expect(typeof sayHello).toBe("function");
+    });
+    it('should return Hello, Jane! when called', function() {
+        expect(sayHello("Jane")).toBe('Hello, Jane!');
+    });
+    it('should return Hello, Alex! when called', function(){
+        expect(sayHello("Alex")).toBe('Hello, Alex!');
+    });
+    it('should return Hello, Pat! when called', function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
     });
