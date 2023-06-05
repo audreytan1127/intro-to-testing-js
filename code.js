@@ -13,3 +13,7 @@ function sayHello(input) {
 function isFive() {
     return true;
 }
+
+function isEven() {
+    return true;
+}
