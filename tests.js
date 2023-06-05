@@ -26,4 +26,19 @@ describe("sayHello", function () {
     it('should return Hello, Pat! when called', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return Hello, World! when called', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return Hello, World! when called', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return Hello, Unknown! when called', function() {
+        expect(sayHello(null)).toBe("Hello, Unknown!");
+    });
+    it('should return Hello, $Money$ when called', function() {
+        expect(sayHello(2.3)).toBe("Hello, $Money$");
+    });
+    it('should return Hello, 5 when called', function() {
+        expect(sayHello("5")).toBe("Hello, 5!");
+    });
     });
